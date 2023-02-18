@@ -180,4 +180,4 @@ while True:
   elif accion==4:
     print('\n** Eliminar tarea **')
     iden=int(input('Indique el ID de la tarea que desea eliminar: '))
-    borrar(rut,iden)
+    borrar(rut,iden) 
