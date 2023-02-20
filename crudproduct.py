@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 from datetime import datetime
 rut=r'BaseCrudColabProductos.xlsx'
 
-def leer(rut:str,extraer:str):
+def leer(rut:str,extraer:str): 
     Archivo_Exccel=load_workbook(rut)
     Hoja_datos=Archivo_Exccel["hoja.productos"]
     Hoja_datos=Hoja_datos["A2":"E"+str(Hoja_datos.max_row)]
