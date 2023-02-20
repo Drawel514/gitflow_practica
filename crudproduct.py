@@ -1,3 +1,3 @@
 from openpyxl import load_workbook
 from datetime import datetime
-rut=r'BaseCrudColabProductos.xlsx'
+rut=r'BaseCrudColabProductos.xlsx' 
