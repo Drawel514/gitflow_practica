@@ -1,6 +1,6 @@
 from openpyxl import load_workbook
 from datetime import datetime
-rut=r'BaseCrudColab.xlsx'
+rut=r'BaseCrudColabProductos.xlsx'
 
 def leer(rut:str,extraer:str):
     Archivo_Exccel=load_workbook(rut)
