@@ -5,4 +5,3 @@
 ## Aprendices 
 + Daniel Alexander Rojas Quisacue
 + Donovan Sanchez
-+ Frank Robinson Cuetia
