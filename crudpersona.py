@@ -121,7 +121,7 @@ def borrar(ruta,identificador):
   if encontro == False:
     print('Error: no existe una tarea con ese id')
     print()
-  return
+  return 
 
 while True:
   print('Indique la accion que desea realizar: \nConsultar: 1\nActualizar: 2\nRegistrar: 3\nBorrar: 4')
