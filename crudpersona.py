@@ -24,7 +24,13 @@ def leer(ruta:str, extraer:str):
 
 def filtrar(info:dict, filtro:str):
   aux={}
-  for i in info:
-    if info[i]['edad']==filtro:
-      aux.setdefault(i,info[i])
+  if filtro=='mayor':
+
+    for i in info:
+      if int(info[i]['edad'])>=18:
+        aux.setdefault(i,info[i])
+  elif filtro=='menor':
+    for i in info:
+      if int(info[i]['edad'])<18:
+        aux.setdefault(i,info[i])
   return aux
