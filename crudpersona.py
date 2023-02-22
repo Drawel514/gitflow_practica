@@ -126,6 +126,7 @@ def borrar(ruta,identificador):
 while True:
   print('Indique la accion que desea realizar: \nConsultar: 1\nActualizar: 2\nRegistrar: 3\nBorrar: 4')
   accion =int(input('Escriba la opcion: '))
+  print('*****************')
   if accion<1 or accion>4:
     print('Comando invalido, por favor eliga una opcion valida')
   elif accion==1:
@@ -150,11 +151,11 @@ while True:
     print('\n** Nueva edad **\n** Nota: si no desea actualizar la edad solo oprima ENTER **')
     datosActualizados['edad']=input('Indique la nueva edad de la persona: ')
     print('\n** Nuevo telefono **')
-    datosActualizados=input('Indique el nuevo telefono de la persona: ')
+    datosActualizados['telefono']=input('Indique el nuevo telefono de la persona: ')
     print('\n** Nuevo correo **')
-    datosActualizados=input('Indique el nuevo correo de la persona: ')
+    datosActualizados['correo']=input('Indique el nuevo correo de la persona: ')
     print('\n** Nuevo nacimiento **')
-    datosActualizados=input('Indique el nuevo nacimiento de la persona: ')
+    datosActualizados['nacimiento']=input('Indique el nuevo nacimiento de la persona: ')
     actualizar(rut,idActualizar, datosActualizados)
     print()
   elif accion==3:
@@ -179,3 +180,4 @@ while True:
     print('\n** Eliminar persona **')
     iden=int(input('Indique el ID de la persona que desea eliminar: '))
     borrar(rut,iden)
+    print('*************')
